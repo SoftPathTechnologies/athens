@@ -7,6 +7,7 @@ class Pages extends CI_Controller {
 	{
 		$data['countries']		=	$this->crud_model->get_all_countries();
 		$data['speakers']		=	$this->crud_model->get_speakers();
+		$data['page_title']		=	"Home Page";
 
 		$this->load->view('Layouts/header', $data);
 		$this->load->view('Pages/index');
